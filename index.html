@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)file:///C:/Users/Home/Desktop/PRFT/programs/javascript/making%20simple%20addition%20calculator/add.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+.num1{
+outline: none;
+width: 50px;
+height: 50px;
+border-color: rgb(2, 0, 128);
+font-size: 40px;
+margin-left: 50px;
+align-items: center;
+}
+.num2{
+outline: none;
+width: 50px;
+height: 50px;
+border-color: rgb(13, 0, 128);
+font-size: 40px;
+align-items: center;
+
+
+}
+.head{
+    color:blue;
+    font-family:roboto;
+}
+.button{
+   border:none;
+   padding: 5px 10px;
+   color:rgb(250, 188, 242);
+   background: rgb(4, 23, 199);
+   border-radius:5px;
+   font-size: 20px;
+   border:inset;
+}
+.button:hover{
+    opacity: 0.6;
+    border:outset;
+}
+.answer{
+    color:blue;
+    font-family:roboto; 
+    font-size:50px ;
+    margin-left: 50px;
+}
+.reset{
+   border:none;
+   padding: 5px 10px;
+   color:rgb(250, 188, 242);
+   background: rgb(4, 23, 199);
+   border-radius:5px;
+   font-size: 20px;
+   border:inset;
+}
+.reset:hover{
+    opacity: 0.6;
+    border:outset;
+}
+.op{
+ color:blue;
+ font-family:agency fb;
+
+}
+.hu{
+    color:blue;
+    font-family:roboto;
+    text-align:center;
+
+
+}
+  </style>
+  <h1 class="hu">MINI CALCULATOR</h1>
+  <h1 class="head">ENTER TWO NUMBERS:</h1>
+  
+  <input type="text" id="num1" class="num1" placeholder="0" value="">
+  <input type="text" id="num2" class="num2" placeholder="0" value="">
+
+  <input id="buttonForAdd" class="button" type="button" value="ADD" onclick="add()">
+  <input id="buttonForSub" class="button" type="button" value="SUB" onclick="sub()">
+  <input id="buttonForMul" class="button" type="button" value="MUL" onclick="mul()">
+  <input id="buttonForDiv" class="button" type="button" value="DIV" onclick="divr()">
+
+  <input id="reset" class="reset" type="button" value="Reset" onclick="reset()">
+
+   <h1 class="head">ANSWER:</h1><br>
+   <div id="ansArea" class="answer">0</div>
+ <script src="cal.js"> </script>
+<h1 class="op">PROGRAMMED BY o001</h1>
+</body></html>
